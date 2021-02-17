@@ -15,7 +15,6 @@ import { People } from './model/people.model';
 export class AppComponent {
   title = '';
 
-
   people$: Observable <People[]>;
 
   constructor(private router: Router,
@@ -26,7 +25,6 @@ export class AppComponent {
 
   }
   editPerson(id) {
-    debugger;
     this.router.navigate(['people', id, 'edit']);
     
   }

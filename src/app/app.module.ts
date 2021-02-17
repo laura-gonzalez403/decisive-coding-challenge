@@ -7,11 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { PersonComponent } from './person/person.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreatePersonComponent } from './create-person/create-person.component';
+import { DropdownComponent } from './dropdown/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonComponent
+    PersonComponent,
+    CreatePersonComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

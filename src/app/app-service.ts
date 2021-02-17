@@ -21,7 +21,6 @@ export class AppService {
   }
 
   updatePerson(id: string, personUpdate: People) {
-    debugger;
     this.http.put<{ form: string }>(`${this.url}/${id}`, personUpdate)
       .subscribe(res => console.log(res));
   }
