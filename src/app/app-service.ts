@@ -14,4 +14,21 @@ export class AppService {
   findAllPeople(): Observable<People[]> {
     return this.http.get<People[]>(this.url);
   }
+
+  findPersonById(id: number): Observable<People> {
+    return this.http.get<People>(`${this.url}/${id}`);
+  }
+
+  updatePerson(personUpdate: People) {
+    this.http.put(this.url, personUpdate)
+      .subscribe(res => console.log(res));
+  }
+  createPerson(addPerson: People) {
+    this.http.post(this.url, addPerson)
+      .subscribe(res => console.log(res));
+  }
+
+  deletePerson(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.url}/${id}`);
+  }
 }

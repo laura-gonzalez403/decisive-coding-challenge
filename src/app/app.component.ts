@@ -10,10 +10,11 @@ import { People } from './model/people.model';
   styleUrls: ['./app.component.scss'],
   providers: [AppService]
 })
+
+
 export class AppComponent {
   title = '';
 
-  isUnchanged = true;
 
   people$: Observable <People[]>;
 
@@ -24,5 +25,9 @@ export class AppComponent {
     this.people$ = this.appService.findAllPeople();
 
   }
-
+  editPerson(id: number) {
+    debugger;
+    this.router.navigate(['person', id]);
+    
+  }
 }
