@@ -1,4 +1,4 @@
-<p>create-person works!</p>
+<h4>Create a new person</h4>
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
@@ -118,18 +118,20 @@
                  formControlName="tags"
                  class="form-control" />
         </div>
+        <br />
         <div class="form-group">
           <app-dropdown formControlName="friends"
                         [placeHolder]="'Select friend'"
                         [options]="friends">
           </app-dropdown>
         </div>
+        <br />
         <button class="btn btn-primary" type="submit">Create Person</button>
       </form>
     </div>
   </div>
-</div>
-<br />
-<a class="btn btn-primary" routerLink='/people'>Return to people</a>
 
+  <br />
+  <a class="btn btn-primary" routerLink='/people'>Return to people</a>
+</div>
 

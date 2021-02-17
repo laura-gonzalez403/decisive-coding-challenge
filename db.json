@@ -1,7 +1,7 @@
 {
   "people": [
     {
-      "name": "Calhoun Humphrey test",
+      "name": "",
       "isActive": true,
       "age": 24,
       "about": "Cillum enim ut nostrud dolor veniam fugiat. Irure voluptate culpa anim deserunt nulla Lorem culpa eu ea in deserunt deserunt cupidatat ea. Sint voluptate proident ad duis. Ipsum nisi eiusmod culpa quis magna consequat exercitation id enim. Aliquip eiusmod pariatur ut voluptate fugiat et sit ea ad.\r\n",
@@ -345,44 +345,12 @@
       ]
     },
     {
-      "id": "6026f08f0870aa6c56b26a5e",
+      "name": "Joyner updated",
       "isActive": true,
-      "balance": "$1,134.88",
-      "picture": "http://placehold.it/32x32",
       "age": 23,
-      "eyeColor": "brown",
-      "name": "Joyner Chambers",
-      "gender": "male",
-      "company": "ISOSURE",
-      "email": "joynerchambers@isosure.com",
-      "phone": "+1 (959) 555-2530",
-      "about": "Ex adipisicing labore elit excepteur amet deserunt voluptate. Occaecat reprehenderit magna pariatur occaecat est enim amet nisi laborum nulla. Nostrud aliqua sunt culpa ullamco. Id duis in ullamco proident dolor mollit esse ad magna cillum ex. Veniam exercitation amet consectetur nisi consectetur. Incididunt ullamco consectetur ipsum occaecat est sit id officia duis reprehenderit ipsum ex nisi ex. Quis eiusmod magna velit ex culpa proident eu laboris sint irure velit velit dolore nostrud.\r\n",
-      "registered": "2015-09-15T02:16:52 +06:00",
-      "latitude": -51.288307,
-      "longitude": 125.162852,
-      "tags": [
-        "duis",
-        "aliqua",
-        "velit",
-        "nisi",
-        "id",
-        "officia",
-        "dolor"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Nelda Wilkinson"
-        },
-        {
-          "id": 1,
-          "name": "Juliana Horton"
-        },
-        {
-          "id": 2,
-          "name": "Jordan Hendricks"
-        }
-      ]
+      "about": "examples",
+      "gender": "female",
+      "id": "6026f08f0870aa6c56b26a5e"
     },
     {
       "id": "6026f08f28147188761f54b5",

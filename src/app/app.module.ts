@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CreatePersonComponent } from './create-person/create-person.component';
 import { DropdownComponent } from './dropdown/dropdown/dropdown.component';
 import { PeopleListComponent } from './people-list/people-list.component';
+import { IsActiveDropDownComponent } from './dropdown/is-active-drop-down/is-active-drop-down.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PeopleListComponent } from './people-list/people-list.component';
     PersonComponent,
     CreatePersonComponent,
     DropdownComponent,
-    PeopleListComponent
+    PeopleListComponent,
+    IsActiveDropDownComponent
   ],
   imports: [
     BrowserModule,

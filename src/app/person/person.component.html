@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" class="needs-validation">
         <div class="form-group">
           <label for="person-name">Person name</label>
           <input type="text"
@@ -10,16 +10,15 @@
                  formControlName="name" />
         </div>
 
-
         <div class="form-group">
           <label for="isActive">Is Active</label>
           <input type="text"
-                 id="isActive"
-                 class="form-control"
-                 formControlName="isActive">
+           id="isActive"
+           class="form-control"
+           formControlName="isActive">
 
         </div>
-
+   
         <div class="form-group">
           <label for="age">Age</label>
           <input type="text"
@@ -31,10 +30,9 @@
         <div class="form-group">
           <label for="about">About Person</label>
           <input type="text"
-                 id="link-video"
+                 id="about"
                  formControlName="about"
                  class="form-control" />
-
         </div>
 
         <div class="form-group">
@@ -44,12 +42,20 @@
                  formControlName="gender"
                  class="form-control" />
         </div>
-        <button class="btn btn-primary" type="submit">Update</button>
+        <button class="btn btn-primary" type="submit">
+          Update
+        </button>
+
       </form>
     </div>
+    <br />
   </div>
-
+  <br />
+  <button class="btn btn-primary" (click)="save()"
+          [disabled]="!form.valid">Save</button>
+  <br />
   <br />
   <a class="btn btn-primary" routerLink='/people'>Return to people</a>
 </div>
 
+<!--<pre>{{form.value | json}}</pre>-->

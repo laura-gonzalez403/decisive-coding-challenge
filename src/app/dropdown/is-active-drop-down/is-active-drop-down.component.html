@@ -1,0 +1,17 @@
+<div ngbDropdown class="d-inline-block">
+  <button type="button" class="btn btn-outline-primary"
+          id="dropdownMenu1"
+          ngbDropdownToggle>
+    {{placeHolder}}
+  </button>
+  <div ngbDropdownMenu class="dropdown-menu"
+       aria-labelledby="dropdownMenu1">
+    <div ngbDropdownItem *ngFor="let option of options">
+      <button type="button" class="dropdown-item"
+              (click)="changeMessage(option)">
+        {{option.isActive}}
+      </button>
+    </div>
+  </div>
+</div>
+

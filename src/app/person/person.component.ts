@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppService } from '../app-service';
 import { People } from '../model/people.model';
-
+import { filter } from 'rxjs/operators';
+import { isActive } from '../dropdown/dropdown/list-dropdown';
 
 @Component({
   selector: 'app-person',
@@ -23,22 +24,31 @@ export class PersonComponent implements OnInit {
     private router: Router) {
 
     this.form = this.formUpdate();
-
   }
 
   formUpdate(): FormGroup {
     return this.fb.group({
-      name: '',
+      name: ['', [
+        Validators.required,
+        Validators.minLength(70)
+      ]],
       isActive: '',
-      age: '',
-      about:'',
-      gender:''
+      age: ['', [
+        Validators.required,
+        Validators.minLength(2),
+        Validators.minLength(3),
+      ]],
+      about: ['', [
+        Validators.minLength(250)
+      ]],
+      gender: ['', [
+        Validators.required
+      ]],
     })
 
   }
 
   ngOnInit(): void {
-
     let currentRoute = this.activatedRoute.snapshot.params['id'];
 
     this.appService.findPersonById(currentRoute)
@@ -48,15 +58,36 @@ export class PersonComponent implements OnInit {
         this.form.patchValue(this.personDetail);
       })
 
-    
   }
+
+
+  save() {
+    //attempt to save to draft to local storage
+    debugger;
+    const draft = localStorage.getItem("person");
+
+    if (draft) {
+      this.form.setValue(JSON.parse(draft));
+      debugger;
+    }
+
+    this.form.valueChanges
+      .pipe(
+        filter(() => this.form.valid))
+      .subscribe(val => localStorage.setItem("person", JSON.stringify(val)))
+  }
+
+
 
   onSubmit() {
     let currentRoute = this.activatedRoute.snapshot.params['id'];
+
     const personUpdated: People = Object.assign({}, this.form.value);
+
     this.appService.updatePerson(currentRoute, personUpdated);
+
 
     this.router.navigate(['people', currentRoute]);
   }
-  
+
 }

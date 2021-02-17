@@ -7,7 +7,12 @@ interface TagDropDown {
   tags: string
 }
 
+interface isActive {
+  isActive:boolean
+}
+
 export {
   FriendDropDown,
+  isActive,
   TagDropDown
 }
