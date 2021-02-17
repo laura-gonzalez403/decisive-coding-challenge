@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AppService } from '../app-service';
-import { ListDropDown } from '../dropdown/dropdown/list-dropdown';
+import { FriendDropDown } from '../dropdown/dropdown/list-dropdown';
 import { People } from '../model/people.model';
 
 @Component({
@@ -12,7 +12,7 @@ import { People } from '../model/people.model';
   providers: [AppService]
 })
 export class CreatePersonComponent implements OnInit {
-  friends: ListDropDown[] = [
+  friends: FriendDropDown[] = [
     {
       id: 1,
       name: 'Gwendolyn Jensen'

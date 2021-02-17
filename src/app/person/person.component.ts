@@ -52,11 +52,11 @@ export class PersonComponent implements OnInit {
   }
 
   onSubmit() {
-    debugger;
     let currentRoute = this.activatedRoute.snapshot.params['id'];
     const personUpdated: People = Object.assign({}, this.form.value);
     this.appService.updatePerson(currentRoute, personUpdated);
 
+    this.router.navigate(['people', currentRoute]);
   }
   
 }

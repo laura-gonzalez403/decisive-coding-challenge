@@ -1,6 +1,6 @@
-import { Component, forwardRef, Input, OnInit } from '@angular/core';
+import { Component, forwardRef, Input } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { ListDropDown } from './list-dropdown';
+import { FriendDropDown } from './list-dropdown';
 
 @Component({
   selector: 'app-dropdown',
@@ -16,12 +16,10 @@ import { ListDropDown } from './list-dropdown';
 })
 export class DropdownComponent implements ControlValueAccessor {
 
-  @Input() options: ListDropDown[];
+  @Input() options: FriendDropDown[]; 
   @Input() placeHolder = 'Select friend';
 
   constructor() { }
-
-
 
   value: number;
 
