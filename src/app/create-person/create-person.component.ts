@@ -55,7 +55,6 @@ export class CreatePersonComponent implements OnInit {
   }
 
   onSubmit() {
-    debugger;
     const newPersonAdd: People = Object.assign({}, this.newPersonForm.value);
 
     this.appService.createPerson(newPersonAdd);

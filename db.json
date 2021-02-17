@@ -305,44 +305,12 @@
       ]
     },
     {
-      "id": "6026f08f5fc9a5488674881e",
-      "isActive": true,
-      "balance": "$1,979.76",
-      "picture": "http://placehold.it/32x32",
-      "age": 28,
-      "eyeColor": "brown",
       "name": "Leslie Shepherd",
-      "gender": "female",
-      "company": "BOILCAT",
-      "email": "leslieshepherd@boilcat.com",
-      "phone": "+1 (843) 499-3525",
+      "isActive": true,
+      "age": "29",
       "about": "Deserunt est labore nulla ad excepteur. Occaecat proident sunt culpa veniam do voluptate ea. Duis cillum adipisicing cillum cillum proident pariatur tempor. Et officia consectetur anim ut quis eu ea incididunt ad ad exercitation cillum et. Anim id esse esse id. Eiusmod aute sint incididunt occaecat duis et nostrud nisi culpa incididunt mollit non excepteur. Quis dolor consectetur aute laborum irure dolore exercitation incididunt ea.\r\n",
-      "registered": "2014-07-06T01:16:04 +06:00",
-      "latitude": -46.64099,
-      "longitude": -51.375099,
-      "tags": [
-        "laborum",
-        "consectetur",
-        "nisi",
-        "anim",
-        "aute",
-        "ex",
-        "id"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Hanson Cline"
-        },
-        {
-          "id": 1,
-          "name": "Alexandria Stone"
-        },
-        {
-          "id": 2,
-          "name": "Tricia Figueroa"
-        }
-      ]
+      "gender": "female",
+      "id": "6026f08f5fc9a5488674881e"
     },
     {
       "name": "Joyner updated",

@@ -63,12 +63,12 @@ export class PersonComponent implements OnInit {
 
   save() {
     //attempt to save to draft to local storage
-    debugger;
+
     const draft = localStorage.getItem("person");
 
     if (draft) {
       this.form.setValue(JSON.parse(draft));
-      debugger;
+
     }
 
     this.form.valueChanges
