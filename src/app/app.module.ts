@@ -9,13 +9,15 @@ import { PersonComponent } from './person/person.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreatePersonComponent } from './create-person/create-person.component';
 import { DropdownComponent } from './dropdown/dropdown/dropdown.component';
+import { PeopleListComponent } from './people-list/people-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonComponent,
     CreatePersonComponent,
-    DropdownComponent
+    DropdownComponent,
+    PeopleListComponent
   ],
   imports: [
     BrowserModule,

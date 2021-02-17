@@ -1,44 +1,12 @@
 {
   "people": [
     {
-      "id": "6026f08fffabf364acbfca9a",
+      "name": "Calhoun Humphrey test",
       "isActive": true,
-      "balance": "$3,687.74",
-      "picture": "http://placehold.it/32x32",
       "age": 24,
-      "eyeColor": "green",
-      "name": "Calhoun Humphrey",
-      "gender": "male",
-      "company": "DECRATEX",
-      "email": "calhounhumphrey@decratex.com",
-      "phone": "+1 (896) 573-3098",
       "about": "Cillum enim ut nostrud dolor veniam fugiat. Irure voluptate culpa anim deserunt nulla Lorem culpa eu ea in deserunt deserunt cupidatat ea. Sint voluptate proident ad duis. Ipsum nisi eiusmod culpa quis magna consequat exercitation id enim. Aliquip eiusmod pariatur ut voluptate fugiat et sit ea ad.\r\n",
-      "registered": "2015-02-22T04:07:17 +07:00",
-      "latitude": 52.388239,
-      "longitude": 52.274162,
-      "tags": [
-        "eu",
-        "tempor",
-        "velit",
-        "nostrud",
-        "do",
-        "eiusmod",
-        "laborum"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Gwendolyn Jensen"
-        },
-        {
-          "id": 1,
-          "name": "Carey Holder"
-        },
-        {
-          "id": 2,
-          "name": "Anne Noel"
-        }
-      ]
+      "gender": "male",
+      "id": "6026f08fffabf364acbfca9a"
     },
     {
       "id": "6026f08fdd4ee2b4cb4866c0",
