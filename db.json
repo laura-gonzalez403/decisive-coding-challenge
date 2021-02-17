@@ -321,44 +321,12 @@
       ]
     },
     {
-      "id": "6026f08fd5d1b2e98534081a",
-      "isActive": true,
-      "balance": "$3,443.51",
-      "picture": "http://placehold.it/32x32",
-      "age": 37,
-      "eyeColor": "green",
       "name": "Mercer Moss",
-      "gender": "male",
-      "company": "KOOGLE",
-      "email": "mercermoss@koogle.com",
-      "phone": "+1 (824) 462-2391",
+      "isActive": true,
+      "age": "39",
       "about": "Commodo velit do enim tempor velit aliquip. Aute deserunt nisi deserunt Lorem non duis voluptate exercitation eiusmod deserunt dolore aliqua. Aliquip nulla enim tempor elit anim do enim. Velit proident nisi sit cupidatat non nulla nostrud laborum adipisicing amet quis. Laborum nisi voluptate ea nulla consectetur deserunt incididunt. In mollit id tempor velit.\r\n",
-      "registered": "2019-09-12T04:55:34 +06:00",
-      "latitude": 87.92815,
-      "longitude": -108.517886,
-      "tags": [
-        "magna",
-        "occaecat",
-        "ut",
-        "sint",
-        "reprehenderit",
-        "elit",
-        "occaecat"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Tanisha Harris"
-        },
-        {
-          "id": 1,
-          "name": "Tracy Hebert"
-        },
-        {
-          "id": 2,
-          "name": "Ford Gill"
-        }
-      ]
+      "gender": "male",
+      "id": "6026f08fd5d1b2e98534081a"
     },
     {
       "id": "6026f08fe207d0a4ea1f6b23",

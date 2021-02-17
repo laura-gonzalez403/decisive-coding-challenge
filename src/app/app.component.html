@@ -9,7 +9,6 @@
       <th scope="col">Is Active</th>
     </tr>
   </thead>
-
   <tbody>
     <ng-container *ngFor="let selected of (people$ | async); index as i">
       <tr *ngIf="selected.isActive == true"
@@ -18,16 +17,17 @@
         <td>{{ selected.name}}</td>
         <td>{{ selected.registered }}</td>
         <td>{{ selected.isActive }} </td>
-        <!--<td [routerLink]="['/person', selected.id]"><button class="btn btn-primary">Edit</button></td>-->
+        <!--<td><button class="btn btn-primary"
+                    [routerLink]="['people', selected.id, 'edit']">Edit
+            </button>
+        </td>-->
         <td><button class="btn btn-primary" (click)="editPerson(selected.id)">Edit</button></td>
       </tr>
     </ng-container>
   </tbody>
 </table>
 
-<div>
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
 
 
 

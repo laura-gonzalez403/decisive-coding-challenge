@@ -11,24 +11,27 @@ export class AppService {
 
   url = 'http://localhost:4500/people';
 
+
   findAllPeople(): Observable<People[]> {
     return this.http.get<People[]>(this.url);
   }
 
-  findPersonById(id: number): Observable<People> {
+  findPersonById(id: string): Observable<People> {
     return this.http.get<People>(`${this.url}/${id}`);
   }
 
-  updatePerson(personUpdate: People) {
-    this.http.put(this.url, personUpdate)
+  updatePerson(id: string, personUpdate: People) {
+    debugger;
+    this.http.put<{ form: string }>(`${this.url}/${id}`, personUpdate)
       .subscribe(res => console.log(res));
   }
   createPerson(addPerson: People) {
     this.http.post(this.url, addPerson)
-      .subscribe(res => console.log(res));
+      .subscribe(res =>
+        console.log(res));
   }
 
-  deletePerson(id: number): Observable<void> {
+  deletePerson(id: string): Observable<void> {
     return this.http.delete<void>(`${this.url}/${id}`);
   }
 }

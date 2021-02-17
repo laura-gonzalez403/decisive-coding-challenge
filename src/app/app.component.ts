@@ -25,9 +25,9 @@ export class AppComponent {
     this.people$ = this.appService.findAllPeople();
 
   }
-  editPerson(id: number) {
+  editPerson(id) {
     debugger;
-    this.router.navigate(['person', id]);
+    this.router.navigate(['people', id, 'edit']);
     
   }
 }

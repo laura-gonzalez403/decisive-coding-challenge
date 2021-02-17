@@ -48,11 +48,14 @@ export class PersonComponent implements OnInit {
         this.form.patchValue(this.personDetail);
       })
 
+    
   }
 
   onSubmit() {
+    debugger;
+    let currentRoute = this.activatedRoute.snapshot.params['id'];
     const personUpdated: People = Object.assign({}, this.form.value);
-    this.appService.updatePerson(personUpdated);
+    this.appService.updatePerson(currentRoute, personUpdated);
 
   }
   
